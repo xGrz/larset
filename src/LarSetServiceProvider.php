@@ -1,5 +1,6 @@
 <?php
 
+namespace xGrz\LarSet;
 
 use Illuminate\Support\ServiceProvider;
 

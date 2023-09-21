@@ -1,6 +1,6 @@
 <?php
 
-namespace xGrz\LaraSet\Enums;
+namespace xGrz\LarSet\Enums;
 
 
 enum SettingFieldTypeEnum: int

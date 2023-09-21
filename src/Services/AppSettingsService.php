@@ -1,14 +1,14 @@
 <?php
 
-namespace xGrz\LaraSet\Services;
+namespace xGrz\LarSet\Services;
 
-use App\Exceptions\AppSettingsNotFoundException;
-use App\Models\Setting;
+
+use xGrz\LarSet\Exceptions\AppSettingsNotFoundException;
 
 class AppSettingsService
 {
 
-    const APP_SETTINGS_CACHE_KEY = 'appSettings1';
+    const APP_SETTINGS_CACHE_KEY = 'appSettings';
 
     /**
      * @throws AppSettingsNotFoundException

@@ -1,9 +1,8 @@
 <?php
 
+namespace xGrz\LarSet\Exceptions;
 
-use \Exception;
-
-class AppSettingsNotFoundException extends Exception
+class AppSettingsNotFoundException extends \Exception
 {
     //
 }

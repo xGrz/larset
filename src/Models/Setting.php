@@ -1,9 +1,11 @@
 <?php
 
+namespace xGrz\LarSet\Models;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
-use xGrz\LaraSet\Enums\SettingFieldTypeEnum;
+use xGrz\LarSet\Enums\SettingFieldTypeEnum;
+use xGrz\LarSet\Exceptions\AppSettingsNotFoundException;
 
 class Setting extends Model
 {
@@ -13,12 +15,12 @@ class Setting extends Model
     ];
 
     /**
-     * @throws Exception
+     * @throws AppSettingsNotFoundException
      */
     static public function read($key)
     {
         $keyFound = self::where('key', $key)->first();
-        if (!$keyFound) throw new \Exception('Setting key ' . $key . ' not exists');
+        if (!$keyFound) throw new AppSettingsNotFoundException('Setting key ' . $key . ' not exists');
         return $keyFound->value;
     }
 

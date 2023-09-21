@@ -1,9 +1,9 @@
 <?php
 
 
-namespace xGrz\LaraSet\Observers;
+namespace xGrz\LarSet\Observers;
 
-use xGrz\LaraSet\Services\AppSettingsService;
+use xGrz\LarSet\Services\AppSettingsService;
 
 class SettingObserver
 {
