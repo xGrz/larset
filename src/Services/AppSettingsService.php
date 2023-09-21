@@ -4,6 +4,7 @@ namespace xGrz\LarSet\Services;
 
 
 use xGrz\LarSet\Exceptions\AppSettingsNotFoundException;
+use xGrz\LarSet\Models\Setting;
 
 class AppSettingsService
 {
