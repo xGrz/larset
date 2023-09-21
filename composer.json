@@ -1,0 +1,30 @@
+{
+    "name": "grzesiek/larset",
+    "description": "Laravel Application settings",
+    "keywords": ["framework", "laravel", "settings"],
+    "require": {
+        "php": "^8.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "xGrz\\LarSet\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "xGrz\\LarSet\\LarSetServiceProvider"
+            ]
+        }
+    },
+
+    "authors": [
+        {
+            "name": "grzesiek",
+            "email": "grzesiek.byskiniewicz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable" : true
+}
